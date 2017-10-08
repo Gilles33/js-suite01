@@ -45,3 +45,43 @@ shoppingList([
 ]);
 
 //  écrire votre code sous ce commentaire
+
+
+function shoppingList(array) {
+    var orange = 0;
+    var kiwi = 0;
+    var ananas = 0;
+    var prune = 0;
+    var banane = 0;
+    var pamplemousse = 0;
+    for (i=0; i<array.length; i++) {
+        for(y=0; y<array[i].length; y++) {
+            switch (array[i][y]) {
+                case 'orange':
+                    orange++;
+                    break;
+                case 'kiwi':
+                    kiwi++;
+                    break;
+                case 'ananas':
+                    ananas++;
+                    break;
+                case 'prune':
+                    prune++;
+                    break;
+                case 'banane':
+                    banane++;
+                    break;
+                case 'pamplemousse':
+                    pamplemousse++;
+                    break;
+            }
+        }
+    }
+    console.log(orange);
+    console.log(kiwi);
+    console.log(ananas);
+    console.log(prune);
+    console.log(banane);
+    console.log(pamplemousse);
+}
